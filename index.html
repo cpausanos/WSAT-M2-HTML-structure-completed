@@ -3,79 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <title>Personal Online CV</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
-        <h1>Your Full Name</h1>
-        <p>IT Student | Web Systems and Technologies</p>
-    </header>  									  
-    <main>
-        <section>
-            <h2>About Me</h2>
-            <img src="images/profile.jpg" alt="Profile photo">
-            <p>Write a short introduction about yourself.</p>
-            <p>Email: <a href="mailto:pausanoschristianpaul033@gmail.com">pausanoschristianpaul033@gmail.com</a><br>
-            GitHub: <a href="https://github.com" target="_blank">github.com</a></p>
+        <section class="card">
+            <h1>Christian Paul L. Pausanos</h1>
+            <p class="subtitle">IT Student | Web Systems and Technologies</p>
         </section>
-    
-    <section>
-        <h2>Skills</h2>
-        <ul>
-            <li>Web Development
-                 <ul>
-                     <li>Frontend
-                         <ul>
-                             <li>HTML</li>
-                             <li>CSS</li>
-                             <li>JavaScript</li>
+    </header>
+
+    <main>
+        <div class="container">
+            
+            <!-- About Me Section -->
+            <section class="card about-me">
+                <h2>About Me</h2>
+                <img src="images/profile.jpg" alt="Profile photo">
+                <p>A dedicated IT student at USTP - CDO Campus with a passion for web development.</p>
+                <p>I am building my expertise in frontend and backend technologies, always eager to learn and take on new challenges in the world of technology.</p>
+                <p>
+                    Email: <a href="mailto:pausanoschristianpaul033@gmail.com">pausanoschristianpaul033@gmail.com</a><br>
+                    GitHub: <a href="https://github.com" target="_blank">github.com</a>
+                </p>
+            </section>
+
+            <!-- Skills Section -->
+            <section class="card centered-content">
+                <h2>Skills</h2>
+                <ul>
+                    <li>HTML & CSS</li>
+                    <li>JavaScript</li>
+                    <li>Web Design Basics</li>
+                    <li>Python Programming</li>
+                    <li>Git & GitHub Version Control</li>
+                    <li>Problem Solving</li>
+                    <li>Team Collaboration</li>
+                </ul>
+            </section>
+
+            <!-- Education Section -->
+            <section class="card">
+                <h2>Education</h2>
+                <table>
+                    <tr>
+                        <th>Program</th>
+                        <th>Institution</th>
+                        <th>Year</th>
+                    </tr>
+                    <tr>
+                        <td>Bachelor of Science in Information Technology</td>
+                        <td>USTP – CDO Campus</td>
+                        <td>2023-2028</td>
+                    </tr>
+                    <tr>
+                        <td>Senior High School</td>
+                        <td>Liceo de Cagayan University</td>
+                        <td>2023</td>
+                    </tr>
+                    <tr>
+                        <td>Junior High School</td>
+                        <td>Bulua National High School</td>
+                        <td>2021</td>
+                    </tr>
+                    <tr>
+                        <td>Elementary School</td>
+                        <td>Bulua Central School</td>
+                        <td>2017</td>
+                    </tr>
+                </table>
+            </section>
+
+            <!-- Contact Me Section -->
+            <section class="card">
+                <h2>Contact Me</h2>
+                <form>
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <textarea placeholder="Message"></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </section>
+
+            <!-- Technologies Section with Nested List -->
+            <section class="card centered-content">
+                <h2>Technologies</h2>
+                <ul>
+                    <li>Web Development
+                        <ul>
+                            <li>Frontend
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                </ul>
+                            </li>
+                            <li>Backend</li>
                         </ul>
                     </li>
-                    <li>Backend</li>
                 </ul>
-            </li>
-        </ul>
-    </section>
-    <section>
-            <h2>Education</h2>
-            <table border="1" cellpadding="3" cellspacing="0">
-                <tr>
-                    <th>Program</th>
-                    <th>Institution</th>
-                    <th>Year Graduated</th>
-                </tr>
-                <tr>
-                    <td>Bachelor of Science in Information Technology</td>
-                    <td>USTP – CDO Campus</td>
-                    <td>2028</td>
-                </tr>
-                <tr>
-                    <td>Senior High School</td>
-                    <td>Liceo de Cagayan University</td>
-                    <td>2023</td>
-                </tr>    
-                <tr>
-                    <td>High School</td>
-                    <td>Bulua National High School</td>
-                    <td>2021</td>
-                </tr>    
-                <tr>
-                    <td>Elementary</td>
-                    <td>Bulua Elementary School</td>
-                    <td>2017</td>
-            </table>
-        </section>
-        <section>
-            <h2>Contact Me</h2>
-            <form>
-                <input type="text" placeholder="Name"><br><br>
-                <input type="email" placeholder="Email"><br><br>
-                <textarea placeholder="Message"></textarea><br><br>
-                <button type="submit">Send</button>
-            </form>
-        </section>
-</main>    
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer outside the card and container -->
     <footer>
         <p>&copy; 2026 Christian Paul L. Pausanos. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
