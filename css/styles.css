@@ -4,11 +4,13 @@
     padding: 0;
 }
 
+/* Default Light Mode */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #b5d5edd4;
     padding: 20px;
+    color: #222;
 }
 
 .container {
@@ -132,7 +134,6 @@ img {
     display: block;
 }
 
-/* Center About Me section content */
 .about-me {
     text-align: center;
 }
@@ -142,3 +143,74 @@ img {
     display: block;
 }
 
+.hidden {
+    display: none;
+}
+
+/* DARK MODE */
+.dark-mode {
+    background-color: #2b2b2b;
+    color: #e0e0e0;
+}
+
+/* Dark Mode Cards */
+.dark-mode .card {
+    background-color: #394054;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+/* Dark Mode Headers */
+.dark-mode h1 {
+    color: #ffffff;
+}
+
+.dark-mode h2 {
+    color: #4da3ff;
+}
+
+.dark-mode header p {
+    color: #bbbbbb;
+}
+
+/* Dark Mode Links */
+.dark-mode a {
+    color: #4da3ff;
+}
+
+.dark-mode a:hover {
+    color: #82c0ff;
+}
+
+/* Dark Mode Table */
+.dark-mode th {
+    background-color: #2a2a2a;
+    color: #ffffff;
+}
+
+.dark-mode td {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    border-color: #444;
+}
+
+/* Dark Mode Inputs */
+.dark-mode input,
+.dark-mode textarea {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border: 1px solid #555;
+}
+
+/* Dark Mode Button */
+.dark-mode button {
+    background-color: #4da3ff;
+}
+
+.dark-mode button:hover {
+    background-color: #82c0ff;
+}
+
+/* Dark Mode Footer */
+.dark-mode footer {
+    color: #aaaaaa;
+}
