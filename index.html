@@ -7,6 +7,7 @@
 </head>
 <body>
     <header>
+        <button id="themeToggle">Toggle Dark Mode</button>
         <section class="card">
             <h1>Christian Paul L. Pausanos</h1>
             <p class="subtitle">IT Student | Web Systems and Technologies</p>
@@ -27,9 +28,13 @@
                     GitHub: <a href="https://github.com" target="_blank">github.com</a>
                 </p>
             </section>
+            <button id="toggleSkills">Show/Hide Skills</button>
 
             <!-- Skills Section -->
             <section class="card centered-content">
+             
+                <section class="card" id="skillsSection">
+
                 <h2>Skills</h2>
                 <ul>
                     <li>HTML & CSS</li>
@@ -40,6 +45,9 @@
                     <li>Problem Solving</li>
                     <li>Team Collaboration</li>
                 </ul>
+                   
+                </section>
+                </section>
             </section>
 
             <!-- Education Section -->
@@ -78,10 +86,10 @@
             <section class="card">
                 <h2>Contact Me</h2>
                 <form>
-                    <input type="text" placeholder="Name">
-                    <input type="email" placeholder="Email">
+                    <input type="text"  id="name"  placeholder="Name">
+                    <input type="email" id="email" placeholder="Email">
                     <textarea placeholder="Message"></textarea>
-                    <button type="submit">Send</button>
+                    <button type="submit" id="submitBtn">Send</button>
                 </form>
             </section>
 
@@ -112,5 +120,6 @@
         <p>&copy; 2026 Christian Paul L. Pausanos. All rights reserved.</p>
     </footer>
 
+    <script src="js/script.js"></script>
 </body>
 </html>
