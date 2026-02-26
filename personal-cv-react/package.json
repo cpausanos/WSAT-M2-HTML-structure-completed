@@ -1,9 +1,9 @@
 {
   "name": "personal-cv-react",
+  "homepage": "https://cpausanos.github.io/WSAT-M2-HTML-structure-completed",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://cpausanos.github.io/WSAT-M2-HTML-structure-completed/personal-cv-react",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
