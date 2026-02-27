@@ -3,7 +3,7 @@ function About() {
     <section className="card about-me">
       <h2>About Me</h2>
 
-      <img src="public/images/profile.jpg" alt="Profile photo" />
+      <img src="src/assets/images/profile.jpg" alt="Profile photo" />
 
       <p>
         A dedicated IT student at USTP - CDO Campus with a passion
