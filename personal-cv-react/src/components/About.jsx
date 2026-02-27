@@ -1,9 +1,11 @@
+import profilePhoto from '../assets/images/profile.jpg';
+
 function About() {
   return (
     <section className="card about-me">
       <h2>About Me</h2>
 
-      <img src="src/assets/images/profile.jpg" alt="Profile photo" />
+      <img src={profilePhoto} alt="Profile photo" />
 
       <p>
         A dedicated IT student at USTP - CDO Campus with a passion
@@ -19,11 +21,6 @@ function About() {
         Email:
         <a href="mailto:pausanoschristianpaul033@gmail.com">
           pausanoschristianpaul033@gmail.com
-        </a>
-        <br />
-        GitHub:
-        <a href="https://github.com" target="_blank">
-          github.com
         </a>
       </p>
     </section>
