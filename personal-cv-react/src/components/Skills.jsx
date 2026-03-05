@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function Skills() {
+function Skills({ skills }) {
   const [visible, setVisible] = useState(true);
 
   const toggleSkills = () => setVisible(!visible);
@@ -16,13 +16,9 @@ function Skills() {
         <section className="card" id="skillsSection">
           <h2>Skills</h2>
           <ul>
-            <li>HTML & CSS</li>
-            <li>JavaScript</li>
-            <li>Web Design Basics</li>
-            <li>Python Programming</li>
-            <li>Git & GitHub Version Control</li>
-            <li>Problem Solving</li>
-            <li>Team Collaboration</li>
+            {skills.map((skill, index) => (
+              <li key={index}>{skill}</li>
+            ))}
           </ul>
         </section>
       )}

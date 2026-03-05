@@ -1,33 +1,34 @@
 import { useState } from "react";
+import Card from "./Card";
 
 function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert(`Thank you ${name}!`);
+  };
+
   const handleSend = (e) => {
     e.preventDefault();
 
-    // Check if any field is empty
     if (!name || !email || !message) {
       alert("Please fill in all required fields.");
       return;
     }
 
-    // All fields filled — show success
     alert("Form submitted successfully!");
 
-    // Clear the fields after sending
     setName("");
     setEmail("");
     setMessage("");
   };
 
   return (
-    <section className="card">
-      <h2>Contact Me</h2>
-
-      <form onSubmit={handleSend}>
+    <Card title="Contact Me">
+      <form onSubmit={handleSubmit}>
         <input
           type="text"
           placeholder="Name"
@@ -48,7 +49,7 @@ function Contact() {
 
         <button type="submit">Send</button>
       </form>
-    </section>
+    </Card>
   );
 }
 

@@ -9,6 +9,39 @@ import Footer from "./components/Footer";
 function App() {
   const [darkMode, setDarkMode] = useState(false);
 
+  const skills = [
+    "HTML & CSS",
+    "JavaScript",
+    "Web Design Basics",
+    "Python Programming",
+    "Git & GitHub Version Control",
+    "Problem Solving",
+    "Team Collaboration"
+  ];
+
+  const education = [
+    {
+      program: "Bachelor of Science in Information Technology",
+      school: "USTP – CDO Campus",
+      year: "2023-2028"
+    },
+    {
+      program: "Senior High School",
+      school: "Liceo de Cagayan University",
+      year: "2023"
+    },
+    {
+      program: "Junior High School",
+      school: "Bulua National High School",
+      year: "2021"
+    },
+    {
+      program: "Elementary School",
+      school: "Bulua Central School",
+      year: "2017"
+    }
+  ];
+
   return (
     <div className={darkMode ? "dark-mode" : ""}>
       <button onClick={() => setDarkMode(!darkMode)}>
@@ -16,8 +49,8 @@ function App() {
       </button>
       <Header />
       <About />
-      <Skills />
-      <Education />
+      <Skills skills={skills} />
+      <Education education={education} />
       <Contact />
       <Footer />
     </div>
