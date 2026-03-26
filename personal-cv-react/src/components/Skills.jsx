@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Card from "./Card";
 
 function Skills({ skills }) {
   const [visible, setVisible] = useState(true);
@@ -6,22 +7,22 @@ function Skills({ skills }) {
   const toggleSkills = () => setVisible(!visible);
 
   return (
-    <section className="card centered-content">
+    <section className="centered-content">
 
       <button onClick={toggleSkills}>
         {visible ? "Hide Skills" : "Show Skills"}
       </button>
 
       {visible && (
-        <section className="card" id="skillsSection">
-          <h2>Skills</h2>
+        <Card title="Skills">
           <ul>
             {skills.map((skill, index) => (
               <li key={index}>{skill}</li>
             ))}
           </ul>
-        </section>
+        </Card>
       )}
+
     </section>
   );
 }
