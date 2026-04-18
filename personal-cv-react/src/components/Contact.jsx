@@ -19,7 +19,7 @@ function Contact() {
       headers: {
         "Content-Type": "application/json"
       },
-      body: JSON.stringify({ name: name })
+      body: JSON.stringify({ name: name, email: email, message: message })
     })
     .then(res => res.json())
     .then(data => {
@@ -54,7 +54,6 @@ function Contact() {
           value={message}
           onChange={(e) => setMessage(e.target.value)}
         ></textarea>
-
         <button type="submit">Send</button>
       </form>
     </Card>
